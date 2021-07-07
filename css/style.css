@@ -1,0 +1,142 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background: #1a2236;
+}
+
+#menu-top {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#shape-square {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  left: 52px;
+  background: linear-gradient(0deg, #e35461, #e35461);
+  background-blend-mode: normal, overlay, normal;
+  transform: rotate(45deg) translateY(3px) translateX(18px);
+}
+
+#shape-triangle {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  background: linear-gradient(0deg, #fec25a, #fec25a);
+  background-blend-mode: normal, overlay, normal;
+  transform: rotate(45deg) scale(2) translateX(-28px);
+}
+
+#main-container {
+  display: flex;
+  left: 15vw;
+  right: 15vw;
+  width: 70vw;
+  height: 100%;
+  position: relative;
+  flex-direction: column;
+}
+
+#title {
+  position: relative;
+  display: flex;
+  width: 250px;
+  height: 150px;
+  top: 75px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 65px;
+  line-height: 100%;
+  color: #fff;
+}
+
+#menu-bar-1 {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 4px;
+  left: 90vw;
+  top: 25px;
+  background: #fff;
+  transition: 0.2s;
+}
+
+#menu-bar-1:hover {
+  background: #fec25a;
+}
+
+#menu-bar-2 {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 4px;
+  left: 90vw;
+  top: 30px;
+  background: #fff;
+  transition: 0.2s;
+}
+
+#menu-bar-2:hover {
+  background: #e35461;
+}
+
+#menu-bar-3 {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 4px;
+  left: 90vw;
+  top: 35px;
+  background: #fff;
+  transition: 0.2s;
+}
+
+#menu-bar-3:hover {
+  background: #fec25a;
+}
+
+#presentation {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 250px;
+  top: 50px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+#button-text {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #1a2236;
+  width: 100%;
+  align-self: center;
+}
+
+#button-main {
+  position: relative;
+  display: flex;
+  width: 288px;
+  height: 50px;
+  top: 50px;
+  background: #fff;
+  transition: 0.3s;
+  border: solid 1px #fff;
+}
+
+#button-main:hover {
+  background: #a8808b;
+}
