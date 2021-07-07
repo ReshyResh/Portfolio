@@ -30,7 +30,7 @@ body {
   transform: rotate(45deg) scale(2) translateX(-28px);
 }
 
-#main-container {
+.main-container {
   display: flex;
   left: 15vw;
   right: 15vw;
@@ -40,7 +40,7 @@ body {
   flex-direction: column;
 }
 
-#title {
+.title {
   position: relative;
   display: flex;
   width: 250px;
@@ -54,52 +54,33 @@ body {
   color: #fff;
 }
 
-#menu-bar-1 {
+.menu-bar {
   position: relative;
   display: flex;
   width: 30px;
   height: 4px;
   left: 90vw;
-  top: 25px;
+  top: 10px;
+  margin-top: 5px;
   background: #fff;
   transition: 0.2s;
 }
 
-#menu-bar-1:hover {
+.menu-bar:hover {
   background: #fec25a;
 }
 
-#menu-bar-2 {
-  position: relative;
-  display: flex;
+.red-line {
   width: 30px;
   height: 4px;
-  left: 90vw;
-  top: 30px;
-  background: #fff;
   transition: 0.2s;
 }
 
-#menu-bar-2:hover {
+.red-line:hover {
   background: #e35461;
 }
 
-#menu-bar-3 {
-  position: relative;
-  display: flex;
-  width: 30px;
-  height: 4px;
-  left: 90vw;
-  top: 35px;
-  background: #fff;
-  transition: 0.2s;
-}
-
-#menu-bar-3:hover {
-  background: #fec25a;
-}
-
-#presentation {
+.presentation {
   position: relative;
   display: flex;
   width: 300px;
@@ -109,12 +90,12 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 23px;
   letter-spacing: 0.04em;
   color: #fff;
 }
 
-#button-text {
+.button-text {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
