@@ -11,7 +11,7 @@ body {
   flex-direction: column;
 }
 
-#shape-square {
+.shape-square {
   position: absolute;
   width: 74px;
   height: 74px;
@@ -21,7 +21,7 @@ body {
   transform: rotate(45deg) translateY(3px) translateX(18px);
 }
 
-#shape-triangle {
+.shape-triangle {
   position: absolute;
   width: 74px;
   height: 74px;
