@@ -236,6 +236,14 @@ body {
   background: #1a2236;
 }
 
+.svg-arrow {
+  width:25px;
+  height: 20px;
+  position: relative;
+  top: 5px;
+  padding-left: 5px;
+}
+
 .bottom-square-1 {
   height: 290px;
   width: 290px;
@@ -280,4 +288,31 @@ body {
   line-height: 27px;
   letter-spacing: -0.0525em;
   color: #fff;
+}
+
+.input-form {
+  width: 288px;
+  height: 52px;
+  background: #FFFFFF;
+  border: 1px solid #DFDFE0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.text-form {
+  width: 288px;
+  height: 130px;
+  background: #FFFFFF;
+  border: 1px solid #DFDFE0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+footer {
+  display:flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  background: #101221;
 }
