@@ -137,7 +137,7 @@ body {
 .shapes {
   height: 320px;
   width: 100vw;
-  background-image: url("../img/shapes.png");
+  background-image: url("img/shapes.png");
 }
 
 .grid-projects {
@@ -246,21 +246,21 @@ body {
   height: 290px;
   width: 290px;
   margin-top: 20px;
-  background-image: url("../img/square-blue.png");
+  background-image: url("img/square-blue.png");
 }
 
 .bottom-square-2 {
   height: 290px;
   width: 290px;
   margin-top: 20px;
-  background-image: url("../img/square-red.png");
+  background-image: url("img/square-red.png");
 }
 
 .bottom-square-3 {
   height: 290px;
   width: 290px;
   margin-top: 20px;
-  background-image: url("../img/square-yellow.png");
+  background-image: url("img/square-yellow.png");
   margin-bottom: 20px;
 }
 
