@@ -16,7 +16,8 @@ Beginning of the personal portfolio, starting with the mobile version.
 
 - Interactive main button
  
-  ![9hO5zfC](https://user-images.githubusercontent.com/85108160/124786724-3d0f8a00-df48-11eb-90cd-d853d4c7415f.gif)
+  ![v0MWP4s](https://user-images.githubusercontent.com/85108160/124942160-ac9a7d80-e00b-11eb-91c5-daaf14b4e193.gif)
+
 
 ## Authors
 
