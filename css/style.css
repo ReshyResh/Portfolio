@@ -118,7 +118,7 @@ body {
   width: 100%;
 }
 
-#button-main {
+.button-main {
   position: relative;
   display: flex;
   align-items: center;
@@ -130,15 +130,14 @@ body {
   border: solid 1px #fff;
 }
 
-#button-main:hover {
-  background: #a8808b;
+.button-main:hover {
+  background: #fec25a;
 }
 
 .shapes {
   height: 320px;
   width: 100vw;
   background-image: url("../img/shapes.png");
-
 }
 
 .grid-projects {
@@ -151,8 +150,8 @@ body {
   background: #fff;
 }
 
-#grid-container {
-  background:#fff;
+.grid-container {
+  background: #fff;
   z-index: 0;
 }
 
@@ -162,26 +161,26 @@ body {
 }
 
 .project-image {
-  height:186px;
-  width:320px;
-  display:block;
+  height: 186px;
+  width: 320px;
+  display: block;
 }
 
 .project-content {
-  height:154px;
-  width:320px;
+  height: 154px;
+  width: 320px;
   background-color: #1a2236;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .project-title {
   width: 320px;
   height: 16px;
-  padding-top:15px;
-  padding-left:10px;
-  font-family: Poppins, Arial;
+  padding-top: 15px;
+  padding-left: 10px;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -192,8 +191,8 @@ body {
 .langbox {
   width: 85px;
   height: 25px;
-  background: #98DEDE;
-  font-family: Poppins;
+  background: #98dede;
+  font-family: Poppins, sans-serif;
   font-size: 12px;
   text-align: center;
   border: 1px solid #1a2236;
@@ -212,12 +211,11 @@ body {
 }
 
 .button-project:hover {
-  background: #a8808b;
+  background: #fec25a;
 }
 
-
 .svg {
-  width:25px;
+  width: 25px;
   height: 20px;
   position: relative;
   top: 1px;
@@ -237,7 +235,7 @@ body {
 }
 
 .svg-arrow {
-  width:25px;
+  width: 25px;
   height: 20px;
   position: relative;
   top: 5px;
@@ -272,7 +270,7 @@ body {
   left: 50px;
   width: 116px;
   height: 30px;
-  font-family: Poppins,Arial;
+  font-family: Poppins, sans-serif;
   font-size: 20px;
   color: #fff;
 }
@@ -281,7 +279,7 @@ body {
   position: relative;
   left: 40px;
   top: 20px;
-  font-family: Poppins,Arial;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -293,8 +291,8 @@ body {
 .input-form {
   width: 288px;
   height: 52px;
-  background: #FFFFFF;
-  border: 1px solid #DFDFE0;
+  background: #fff;
+  border: 1px solid #dfdfe0;
   box-sizing: border-box;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -303,14 +301,14 @@ body {
 .text-form {
   width: 288px;
   height: 130px;
-  background: #FFFFFF;
-  border: 1px solid #DFDFE0;
+  background: #fff;
+  border: 1px solid #dfdfe0;
   box-sizing: border-box;
   border-radius: 4px;
 }
 
 footer {
-  display:flex;
+  display: flex;
   justify-content: center;
   color: #fff;
   font-size: 20px;

@@ -1,2 +1,3 @@
 .stylelintrc.json
 .hintrc
+node_modules/
