@@ -2,6 +2,13 @@ body {
   overflow-x: hidden;
   margin: 0;
   background: #1a2236;
+  position: absolute;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 #menu-top {
@@ -36,7 +43,6 @@ body {
   left: 15vw;
   right: 15vw;
   width: 70vw;
-  height: 100vh;
   position: relative;
   flex-direction: column;
 }
@@ -58,13 +64,15 @@ body {
   position: relative;
   color: #1a2236;
   width: 250px;
-  height: 150px;
+  height: 200px;
   top: 75px;
+  left: 15vw;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 65px;
   line-height: 100%;
+  margin: 0;
 }
 
 .menu-bar {
@@ -126,6 +134,7 @@ body {
   height: 50px;
   top: 50px;
   background: #fff;
+  margin-bottom: 300px;
   transition: 0.3s;
   border: solid 1px #fff;
 }
@@ -156,18 +165,19 @@ body {
 }
 
 .project {
-  height: 340px;
+  height: 390px;
   width: 320px;
 }
 
 .project-image {
   height: 186px;
   width: 320px;
-  display: block;
+  position: relative;
+  top: 4px;
 }
 
 .project-content {
-  height: 154px;
+  height: 204px;
   width: 320px;
   background-color: #1a2236;
   display: flex;
@@ -175,16 +185,27 @@ body {
   justify-content: space-around;
 }
 
-.project-title {
+.project-list {
+  list-style: none;
+  display: contents;
+}
+
+.project-description {
   width: 320px;
-  height: 16px;
-  padding-top: 15px;
   padding-left: 10px;
   font-family: Poppins, sans-serif;
-  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+}
+
+.project-title {
+  width: 320px;
+  height: 1px;
+  padding-left: 10px;
+  font-family: Poppins, sans-serif;
   font-weight: 300;
   font-size: 20px;
-  line-height: 80%;
   color: #fff;
 }
 
@@ -201,13 +222,13 @@ body {
 }
 
 .button-project {
-  width: 180px;
+  width: 194px;
   height: 50px;
   background: #fff;
   transition: 0.3s;
   border: solid 1px #1a2236;
   position: relative;
-  left: -60px;
+  left: -53px;
 }
 
 .button-project:hover {
@@ -227,7 +248,6 @@ body {
   right: 15vw;
   width: 70vw;
   height: 100vh;
-  position: relative;
 }
 
 #about-container {
@@ -279,6 +299,7 @@ body {
   position: relative;
   left: 40px;
   top: 20px;
+  list-style: disc;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -307,10 +328,16 @@ body {
   border-radius: 4px;
 }
 
+#contact-form {
+  display: flex;
+  flex-flow: column;
+}
+
 footer {
   display: flex;
   justify-content: center;
   color: #fff;
   font-size: 20px;
   background: #101221;
+  padding: 2em;
 }

@@ -28,65 +28,81 @@
     <section class="shapes"></section>
 
     <div class="grid-container">
-    <section class="grid-projects">
-      <h1 class="title-project">Projects</h1>
+    <h2 class="title-project">Projects</h2>
+    <ul class="grid-projects">
 
-      <div class="project">
+      <li class="project">
         <img src="img/laptop.png" class="project-image" alt="Project picture">
         <section class="project-content">
-          <span class="project-title"> Project name goes here </span>
-          <span class="langbox">HTML/CSS</span>
-          <span class="langbox">JavaScript</span>
-          <span class="langbox">Ruby On Rails</span>
+          <h2 class="project-title"> Project name goes here </h2>
+          <p class="project-description">Small description of the project</p>
+          <ul class="project-list">
+            <li class="langbox">HTML/CSS</li>
+            <li class="langbox">JavaScript</li>
+            <li class="langbox">Ruby On Rails</li>
+          </ul>
           <button class="button-project" type="submit"><span class="button-text">See This Project<img class="svg-arrow" src="img/arrow.svg" alt="Arrow"></span></button>
         </section>
-      </div>
+      </li>
 
-      <div class="project">
+      <li class="project">
         <img src="img/laptop2.png" class="project-image" alt="Project picture">
         <section class="project-content">
-          <span class="project-title"> Project name goes here </span>
-          <span class="langbox">HTML/CSS</span>
-          <span class="langbox">JavaScript</span>
-          <span class="langbox">Ruby On Rails</span>
+          <h2 class="project-title"> Project name goes here </h2>
+          <p class="project-description">Small description of the project</p>
+          <ul class="project-list">
+            <li class="langbox">HTML/CSS</li>
+            <li class="langbox">JavaScript</li>
+            <li class="langbox">Ruby On Rails</li>
+          </ul>
           <button class="button-project" type="submit"><span class="button-text">See This Project<img class="svg-arrow" src="img/arrow.svg" alt="Arrow"></span></button>
         </section>
-      </div>
+      </li>
 
-      <div class="project">
+      <li class="project">
         <img src="img/laptop3.png" class="project-image" alt="Project picture">
         <section class="project-content">
-          <span class="project-title"> Project name goes here </span>
-          <span class="langbox">HTML/CSS</span>
-          <span class="langbox">JavaScript</span>
-          <span class="langbox">Ruby On Rails</span>
+          <h2 class="project-title"> Project name goes here </h2>
+          <p class="project-description">Small description of the project</p>
+          <ul class="project-list">
+            <li class="langbox">HTML/CSS</li>
+            <li class="langbox">JavaScript</li>
+            <li class="langbox">Ruby On Rails</li>
+          </ul>
           <button class="button-project" type="submit"><span class="button-text">See This Project<img class="svg-arrow" src="img/arrow.svg" alt="Arrow"></span></button>
         </section>
-      </div>
+      </li>
 
-      <div class="project">
+      <li class="project">
         <img src="img/laptop4.png" class="project-image" alt="Project picture">
         <section class="project-content">
-          <span class="project-title"> Project name goes here </span>
-          <span class="langbox">HTML/CSS</span>
-          <span class="langbox">JavaScript</span>
-          <span class="langbox">Ruby On Rails</span>
+          <h2 class="project-title"> Project name goes here </h2>
+          <p class="project-description">Small description of the project</p>
+          <ul class="project-list">
+            <li class="langbox">HTML/CSS</li>
+            <li class="langbox">JavaScript</li>
+            <li class="langbox">Ruby On Rails</li>
+          </ul>
           <button class="button-project" type="submit"><span class="button-text">See This Project<img class="svg-arrow" src="img/arrow.svg" alt="Arrow"></span></button>
         </section>
-      </div>
+      </li>
 
-      <div class="project">
+      <li class="project">
         <img src="img/laptop5.png" class="project-image" alt="Project picture">
         <section class="project-content">
-          <span class="project-title"> Project name goes here </span>
-          <span class="langbox">HTML/CSS</span>
-          <span class="langbox">JavaScript</span>
-          <span class="langbox">Ruby On Rails</span>
+          <h2 class="project-title"> Project name goes here </h2>
+          <p class="project-description">Small description of the project</p>
+
+          <ul class="project-list">
+            <li class="langbox">HTML/CSS</li>
+            <li class="langbox">JavaScript</li>
+            <li class="langbox">Ruby On Rails</li>
+          </ul>
           <button class="button-project" type="submit"><span class="button-text">See This Project<img class="svg-arrow" src="img/arrow.svg" alt="Arrow"></span></button>
         </section>
-      </div>
+      </li>
 
-    </section>
+    </ul>
     </div>
 
     <div id="about-container">
@@ -138,10 +154,12 @@
     <section class="main-container">
       <h1 class="title">Get Started</h1>
       <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-      <input type="text" class="input-form" placeholder="Your name">
-      <input type="text" class="input-form" placeholder="Your email">
-      <input type="text" class="text-form" placeholder="Enter your message here..">
-      <button class="button-main" type="submit"><span class="button-text">Start Collaboration</span></button>
+      <form id="contact-form">
+        <input type="text" class="input-form" placeholder="Your name">
+        <input type="text" class="input-form" placeholder="Your email">
+        <input type="text" class="text-form" placeholder="Enter your message here..">
+        <button class="button-main" type="submit"><span class="button-text">Start Collaboration</span></button>
+      </form>
     </section>
 
     <footer>
@@ -153,5 +171,6 @@
         <li class="fab fa-facebook"></li>
       </ul>
     </footer>
+
   </body>
 </html>
