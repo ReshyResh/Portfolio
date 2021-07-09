@@ -248,6 +248,7 @@ ul {
   right: 15vw;
   width: 70vw;
   height: 100vh;
+  position: relative;
 }
 
 #about-container {
