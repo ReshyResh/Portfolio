@@ -137,7 +137,12 @@ ul {
 }
 
 .button-main:hover {
-  background: #fec25a;
+  background: #1a2236;
+  color: #fff;
+}
+
+.button-main:hover .button-text {
+  color: #fff;
 }
 
 .shapes {
@@ -226,10 +231,16 @@ ul {
 }
 
 .button-project:hover {
-  background: #fec25a;
+  background: #1a2236;
+  color: #fff;
+  border: 1px solid white;
 }
 
-.svg {
+.button-project:hover .button-text{
+  color: #fff;
+}
+
+.fa-download {
   width: 25px;
   height: 20px;
   position: relative;
@@ -245,12 +256,13 @@ ul {
   background: #1a2236;
 }
 
-.svg-arrow {
+.fa-angle-right {
   width: 25px;
   height: 20px;
   position: relative;
-  top: 5px;
   padding-left: 5px;
+  font-size: 25px;
+  top: 4px;
 }
 
 .bottom-square-1 {
@@ -308,6 +320,7 @@ ul {
   box-sizing: border-box;
   border-radius: 4px;
   margin-bottom: 20px;
+  padding: 20px;
 }
 
 .text-form {
@@ -317,6 +330,11 @@ ul {
   border: 1px solid #dfdfe0;
   box-sizing: border-box;
   border-radius: 4px;
+  font-size: 15px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  padding: 20px;
 }
 
 #contact-form {
