@@ -155,9 +155,9 @@
       <h1 class="title">Get Started</h1>
       <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
       <form id="contact-form" action="https://formspree.io/f/xqkwdpqy" method="POST">
-        <input name="name" type="text" class="input-form" placeholder="Your name">
-        <input name="email" type="email" class="input-form" placeholder="Your email">
-        <input name="suggestions" type="text" class="text-form" placeholder="Enter your message here..">
+        <input name="name" maxlength="30" type="text" class="input-form" required placeholder="Your name">
+        <input name="email" type="email" class="input-form" required placeholder="Your email">
+        <input name="message" type="text" maxlength="500" class="text-form" placeholder="Enter your message here..">
         <button class="button-main" type="submit"><span class="button-text">Start Collaboration</span></button>
       </form>
     </section>
