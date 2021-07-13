@@ -24,7 +24,7 @@ See it [Here](https://i.imgur.com/NAPEJvl.png).
 
 - Interactive main button
  
-  ![v0MWP4s](https://user-images.githubusercontent.com/85108160/124942160-ac9a7d80-e00b-11eb-91c5-daaf14b4e193.gif)
+  ![hwXW6Sl](https://user-images.githubusercontent.com/85108160/125435164-b424c68c-032b-4b88-81bc-80b735891db4.gif)
 
 
 ## Authors
