@@ -377,7 +377,7 @@ footer a {
   padding-bottom: 20px;
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1600px) {
   footer {
     flex-flow: row;
     font-size: 35px;
