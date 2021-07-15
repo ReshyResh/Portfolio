@@ -18,7 +18,7 @@ ul {
   flex-direction: column;
 }
 
-.main-menu{
+.main-menu {
   display: none;
 }
 
@@ -372,16 +372,25 @@ footer a {
   border: none;
 }
 
-.social-container {
-
-}
-
 .text-footer-button {
   color: #fff;
   padding-bottom: 20px;
 }
 
-@media (min-width:1900px) {
+@media (min-width: 1900px) {
+  footer {
+    flex-flow: row;
+    font-size: 35px;
+    justify-content: space-between;
+    padding: 1em;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  footer li {
+    margin: 20px;
+  }
+
   .container-top {
     flex-direction: column;
     align-items: flex-start;
@@ -433,21 +442,22 @@ footer a {
     justify-content: center;
   }
 
-  .main-menu{
+  .main-menu {
     display: flex;
     align-items: center;
   }
 
-  .main-menu li{
+  .main-menu li {
     color: #fff;
     padding: 3em;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
   }
-  .main-menu li:hover{
+
+  .main-menu li:hover {
     border-bottom: 2px solid #fff;
   }
 
@@ -468,21 +478,23 @@ footer a {
     background: none;
   }
 
-  .first-pr, .second-pr, .third-pr, .fourth-pr, .fifth-pr {
+  .first-pr,
+  .second-pr,
+  .third-pr,
+  .fourth-pr,
+  .fifth-pr {
     display: none;
   }
 
+  .container-about-section {
+    display: inline-flex;
+    flex-flow: row-reverse;
+  }
 
-.container-about-section{
-  display: inline-flex;
-  flex-flow: row-reverse;
-}
-
-.desktop-title {
+  .desktop-title {
     color: #fff;
     transform: rotate(-90deg);
     font-size: 8em;
-    margin: revert;
     font-family: Poppins, sans-serif;
     font-weight: 300;
   }
@@ -492,7 +504,7 @@ footer a {
   }
 
   .bottom-square {
-      margin: 0;
+    margin: 0;
   }
 
   .languages-grid {
@@ -506,6 +518,7 @@ footer a {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   .footer-title {
     width: 500px;
     text-align: center;
@@ -661,7 +674,6 @@ footer a {
 
   .content-small {
     padding: 0;
-
   }
 
   .pr-hidden:hover > .project-content {
@@ -695,12 +707,12 @@ footer a {
   }
 
   .button-project {
-    left:0;
+    left: 0;
     margin: 10px;
   }
 
   .project-title {
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     width: 800px;
     font-style: normal;
     font-weight: bold;
@@ -718,16 +730,4 @@ footer a {
     font-size: 35px;
     margin-top: 20px;
   }
-
-  footer {
-    flex-flow: row;
-    font-size: 35px;
-    justify-content: space-between;
-    padding: 1em;
-    padding-left: 10vw;
-    padding-right: 10vw;
-  }
-
-  footer li {
-    margin: 20px;
-  }
+}
