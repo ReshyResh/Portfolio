@@ -330,6 +330,11 @@ ul {
   border-radius: 4px;
   margin-bottom: 20px;
   padding: 20px;
+  transition: all 0.5s;
+}
+
+.input-form:focus {
+  transform: scale(1.1);
 }
 
 .text-form {
@@ -344,6 +349,14 @@ ul {
   font-style: normal;
   font-weight: normal;
   padding: 20px;
+}
+
+.text-form2 {
+  transition: all .5s;
+}
+
+.text-form:focus {
+  transform: scale(1.1);
 }
 
 #contact-form {
@@ -542,7 +555,7 @@ footer a {
   .text-form2 {
     width: 618px;
   }
-
+  
   .input-form {
     margin-inline: 20px;
   }
