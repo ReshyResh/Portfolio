@@ -616,36 +616,50 @@ footer a {
     height: 500px;
     background-image: url('img/laptop1-big.png');
     position: relative;
-    background-size: cover;
+    background-size: 100%;
+    background-position: center;
     flex-flow: column-reverse;
+    overflow: hidden;
+    transition: all 1s;
+  }
+
+  .pr-hidden:hover, .hidden-1:hover, .hidden-2:hover, .hidden-3:hover, .hidden-4:hover, .hidden-5:hover {
+    background-size: 110%;
+}
   }
 
   .hidden-2 {
     height: 270px;
     width: 26%;
     background-image: url('img/laptop2-big.png');
-    background-size: cover;
+    background-size: 100%;
     margin-top: 150px;
     display: flex;
     flex-flow: column-reverse;
+    background-position: center;
+    transition: all 1s;
   }
 
   .hidden-3 {
     height: 270px;
     width: 24.5%;
     background-image: url('img/laptop5-big.png');
-    background-size: cover;
+    background-size: 100%;
     display: flex;
     flex-flow: column-reverse;
+    background-position: center;
+    transition: all 1s;
   }
 
   .hidden-4 {
     height: 465px;
     width: 960px;
     background-image: url('img/laptop3-big.png');
-    background-size: cover;
+    background-size: 100%;
     display: flex;
     flex-flow: column-reverse;
+    background-position: center;
+    transition: all 1s;
   }
 
   .project-list {
@@ -656,11 +670,13 @@ footer a {
     background-image: url('img/laptop4-big.png');
     height: 270px;
     width: 24.5%;
-    background-size: cover;
+    background-size: 100%;
     position: relative;
     bottom: 150px;
     display: flex;
     flex-flow: column-reverse;
+    transition: all 1s;
+    background-position: center;
   }
 
   .project-content {
