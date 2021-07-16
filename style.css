@@ -555,7 +555,7 @@ footer a {
   .text-form2 {
     width: 618px;
   }
-  
+
   .input-form {
     margin-inline: 20px;
   }
@@ -638,7 +638,6 @@ footer a {
 
   .pr-hidden:hover, .hidden-1:hover, .hidden-2:hover, .hidden-3:hover, .hidden-4:hover, .hidden-5:hover {
     background-size: 110%;
-}
   }
 
   .hidden-2 {
