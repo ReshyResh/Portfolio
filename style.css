@@ -352,7 +352,7 @@ ul {
 }
 
 .text-form2 {
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .text-form:focus {
@@ -636,10 +636,6 @@ footer a {
     transition: all 1s;
   }
 
-  .pr-hidden:hover, .hidden-1:hover, .hidden-2:hover, .hidden-3:hover, .hidden-4:hover, .hidden-5:hover {
-    background-size: 110%;
-  }
-
   .hidden-2 {
     height: 270px;
     width: 26%;
@@ -689,6 +685,15 @@ footer a {
     flex-flow: column-reverse;
     transition: all 1s;
     background-position: center;
+  }
+
+  .pr-hidden:hover,
+  .hidden-1:hover,
+  .hidden-2:hover,
+  .hidden-3:hover,
+  .hidden-4:hover,
+  .hidden-5:hover {
+    background-size: 110%;
   }
 
   .project-content {
