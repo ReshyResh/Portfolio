@@ -640,9 +640,7 @@ footer a {
     background-size: cover;
     background-position: center;
     flex-flow: column-reverse;
-    overflow: hidden;
-    transition: all 1s;
-    overflow: hidden;
+    transition: all 0.5s;
   }
 
   .hidden-2 {
@@ -654,7 +652,7 @@ footer a {
     display: flex;
     flex-flow: column-reverse;
     background-position: center;
-    transition: all 1s;
+    transition: all 0.5s;
   }
 
   .hidden-3 {
@@ -664,7 +662,7 @@ footer a {
     display: flex;
     flex-flow: column-reverse;
     background-position: center;
-    transition: all 1s;
+    transition: all 0.5s;
   }
 
   .hidden-4 {
@@ -675,7 +673,7 @@ footer a {
     display: flex;
     flex-flow: column-reverse;
     background-position: center;
-    transition: all 1s;
+    transition: all 0.5s;
   }
 
   .project-list {
@@ -688,7 +686,7 @@ footer a {
     background-size: cover;
     display: flex;
     flex-flow: column-reverse;
-    transition: all 1s;
+    transition: all 0.5s;
     background-position: center;
   }
 
@@ -698,7 +696,7 @@ footer a {
   .hidden-3:hover,
   .hidden-4:hover,
   .hidden-5:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 
   .project-content {
