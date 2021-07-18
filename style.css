@@ -567,8 +567,8 @@ footer a {
 
   .pois {
     display: block;
-    width: 10%;
-    height: 203px;
+    width: 20%;
+    height: 210px;
     background-image: url('img/pois.png');
     background-size: cover;
   }
@@ -578,15 +578,15 @@ footer a {
   }
 
   .shape-2 {
-    width: 22%;
+    width: 40%;
     background-image: url('img/shape-2.png');
     background-size: cover;
     margin-left: auto;
   }
 
   .square-red-2 {
-    width: 200px;
-    height: 200px;
+    width: 17%;
+    height: 20.5%;
     background-image: url('img/square-red-2.png');
     background-size: cover;
     align-self: flex-end;
@@ -594,23 +594,21 @@ footer a {
   }
 
   .square-3 {
-    width: 24.5%;
     height: 250px;
-    position: relative;
     background-image: url('img/squares-3.png');
     background-size: cover;
-    bottom: 345px;
-    margin-left: auto;
   }
 
   .desktop-grid {
     display: flex;
     flex-flow: column;
     margin-top: 200px;
+    margin-left: 10vw;
+    width: 80vw;
   }
 
   .ds-grid-first {
-    width: 100vw;
+    width: 80vw;
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
@@ -623,24 +621,35 @@ footer a {
     justify-content: space-between;
   }
 
+  .ds-grid-second-first-container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ds-grid-second-second-container {
+    width: 30%;
+  }
+
   .pr-hidden {
     display: flex;
-    width: 960px;
+    width: 90%;
     height: 500px;
     background-image: url('img/laptop1-big.png');
     position: relative;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     flex-flow: column-reverse;
     overflow: hidden;
     transition: all 1s;
+    overflow: hidden;
   }
 
   .hidden-2 {
     height: 270px;
-    width: 26%;
+    width: 40%;
     background-image: url('img/laptop2-big.png');
-    background-size: 100%;
+    background-size: cover;
     margin-top: 150px;
     display: flex;
     flex-flow: column-reverse;
@@ -650,9 +659,8 @@ footer a {
 
   .hidden-3 {
     height: 270px;
-    width: 24.5%;
     background-image: url('img/laptop5-big.png');
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     flex-flow: column-reverse;
     background-position: center;
@@ -661,9 +669,9 @@ footer a {
 
   .hidden-4 {
     height: 465px;
-    width: 960px;
+    width: 75%;
     background-image: url('img/laptop3-big.png');
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     flex-flow: column-reverse;
     background-position: center;
@@ -677,10 +685,7 @@ footer a {
   .hidden-5 {
     background-image: url('img/laptop4-big.png');
     height: 270px;
-    width: 24.5%;
-    background-size: 100%;
-    position: relative;
-    bottom: 150px;
+    background-size: cover;
     display: flex;
     flex-flow: column-reverse;
     transition: all 1s;
@@ -693,7 +698,7 @@ footer a {
   .hidden-3:hover,
   .hidden-4:hover,
   .hidden-5:hover {
-    background-size: 110%;
+    transform: scale(1.05);
   }
 
   .project-content {
