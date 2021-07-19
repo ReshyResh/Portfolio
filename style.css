@@ -591,6 +591,7 @@ footer a {
     background-size: cover;
     align-self: flex-end;
     margin-right: auto;
+    z-index: 0;
   }
 
   .square-3 {
@@ -703,7 +704,7 @@ footer a {
     display: none;
     height: 60%;
     width: 100%;
-    padding-left: 30px;
+    padding: 30px;
     flex-flow: column;
     background: rgba(26, 34, 54, 0.9);
   }
@@ -749,11 +750,12 @@ footer a {
 
   .project-title {
     font-family: Poppins, sans-serif;
-    width: 800px;
+    width: 100%;
     font-style: normal;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 3em;
     line-height: 80%;
+    height: auto;
   }
 
   .title-small {
