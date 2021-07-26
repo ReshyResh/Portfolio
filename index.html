@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
@@ -20,21 +21,21 @@
   </head>
   <body>
 
-    <nav id="menu-top">
+    <nav class="menu-top" id="main-nav-bar">
       <div class="shape-triangle"></div>
       <div class="shape-square"></div>
-      <div class="menu-bar"></div>
-      <div class="menu-bar"><span class="red-line"></span></div>
-      <div class="menu-bar"></div>
-        <ul class="main-menu">
-          <li>Hello</li>
+      <div onclick="menuToggle()" class="menu-bar"></div>
+      <div onclick="menuToggle()" class="menu-bar"><span class="red-line"></span></div>
+      <div onclick="menuToggle()" class="menu-bar"></div>
+        <ul class="main-menu" id="menu-js">
+          <li><a href="#main-page">Hello</a></li>
           <li>Portfolio</li>
           <li>About</li>
           <li>Contact</li>
         </ul>
     </nav>
 
-    <section class="container container-top">
+    <section class="container container-top" id="main-page">
       <h1 class="title top-title">Robert Baiesita</h1>
       <p class="presentation top-presentation">Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works. If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
       <button class="button-main top-button" type="submit"><span class="button-text">Start Collaboration</span></button>
