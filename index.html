@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
@@ -22,10 +22,8 @@
   <body>
 
     <nav class="menu-top" id="main-nav-bar">
-      <div id="shape-toggle">
-        <div class="shape-triangle"></div>
-        <div class="shape-square"></div>
-      </div>
+      <div class="shape-triangle" id="shape-1"></div>
+      <div class="shape-square" id="shape-2"></div>
       <div onclick="menuToggle()" class="burger-container" id="burger-container">
         <div class="menu-bar"></div>
         <div class="menu-bar"><span class="red-line"></span></div>
@@ -35,7 +33,7 @@
         <div onclick="menuToggle()" id="cross" class="cross invisible">
           <i class="fas fa-times"></i>
         </div>
-        
+
         <ul class="main-menu" id="menu-js">
           <li><a onclick="menuToggle()" href="#main-page">Hello</a></li>
           <li><a onclick="menuToggle()" href="#portfolio">Portfolio</a></li>
