@@ -29,10 +29,9 @@ ul {
 }
 
 .js-main-menu {
-  display: flex;
   flex-flow: column;
-  align-items: center;
   margin: auto;
+  display: flex;
 }
 
 .js-main-menu li {
