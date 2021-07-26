@@ -18,6 +18,10 @@ ul {
   flex-direction: column;
 }
 
+.invisible {
+  display: none;
+}
+
 .js-toggle{
   height: 100vh;
   width: 100%;
@@ -127,16 +131,30 @@ ul {
   margin: auto;
 }
 
+.burger-container {
+  width: 10%;
+  overflow: hidden;
+  position: relative;
+  left: 87.5vw;
+  top: 18px;
+}
+
 .menu-bar {
   position: relative;
   display: flex;
   width: 30px;
   height: 4px;
-  left: 90vw;
-  top: 10px;
   margin-top: 5px;
   background: #fff;
   transition: 0.2s;
+}
+
+.cross {
+  font-size: 2.5em;
+  color: #fff;
+  position: relative;
+  left: 87.5vw;
+  top: 15px;
 }
 
 .menu-bar:hover {
@@ -815,5 +833,15 @@ footer a {
     width: 100vw;
     height: 15vh;
     background: none;
+  }
+
+  .main-menu li>a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .main-menu li>a {
+    color: #fff;
+    text-decoration: none;
   }
 }

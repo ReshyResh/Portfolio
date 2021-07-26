@@ -22,16 +22,25 @@
   <body>
 
     <nav class="menu-top" id="main-nav-bar">
-      <div class="shape-triangle"></div>
-      <div class="shape-square"></div>
-      <div onclick="menuToggle()" class="menu-bar"></div>
-      <div onclick="menuToggle()" class="menu-bar"><span class="red-line"></span></div>
-      <div onclick="menuToggle()" class="menu-bar"></div>
+      <div id="shape-toggle">
+        <div class="shape-triangle"></div>
+        <div class="shape-square"></div>
+      </div>
+      <div onclick="menuToggle()" class="burger-container" id="burger-container">
+        <div class="menu-bar"></div>
+        <div class="menu-bar"><span class="red-line"></span></div>
+        <div class="menu-bar"></div>
+      </div>
+
+        <div onclick="menuToggle()" id="cross" class="cross invisible">
+          <i class="fas fa-times"></i>
+        </div>
+        
         <ul class="main-menu" id="menu-js">
-          <li><a href="#main-page">Hello</a></li>
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a onclick="menuToggle()" href="#main-page">Hello</a></li>
+          <li><a onclick="menuToggle()" href="#portfolio">Portfolio</a></li>
+          <li><a onclick="menuToggle()" href="#about-id">About</a></li>
+          <li><a onclick="menuToggle()" href="#contact-id">Contact</a></li>
         </ul>
     </nav>
 
@@ -44,31 +53,16 @@
     <section class="shapes"></section>
 
 
+    <div id="portfolio">
 
-    <div class="desktop-grid">
+      <div class="desktop-grid">
 
-      <div class="ds-grid-first">
-      <h2 class="desktop-title">Projects</h2>
-      <div class="pois"></div>
-      <div class="pr-hidden">
-      <section class="project-content">
-        <h2 class="project-title"> Project name goes here </h2>
-        <p class="project-description">Small description of the project</p>
-        <ul class="project-list">
-          <li class="langbox">HTML/CSS</li>
-          <li class="langbox">JavaScript</li>
-          <li class="langbox">Ruby On Rails</li>
-        </ul>
-        <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
-      </section></div>
-      </div>
-
-      <div class="ds-grid-second">
-        <div class="ds-grid-second-first-container">
-
-        <div class="hidden-2">
-        <section class="project-content content-small">
-          <h2 class="project-title title-small"> Project name goes here </h2>
+        <div class="ds-grid-first">
+        <h2 class="desktop-title">Projects</h2>
+        <div class="pois"></div>
+        <div class="pr-hidden">
+        <section class="project-content">
+          <h2 class="project-title"> Project name goes here </h2>
           <p class="project-description">Small description of the project</p>
           <ul class="project-list">
             <li class="langbox">HTML/CSS</li>
@@ -77,40 +71,12 @@
           </ul>
           <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
         </section></div>
+        </div>
 
-        <div class="pois second-pois">
-        </div><div class="shape-2"></div>
+        <div class="ds-grid-second">
+          <div class="ds-grid-second-first-container">
 
-        <div class="hidden-4">
-          <section class="project-content">
-            <h2 class="project-title"> Project name goes here </h2>
-            <p class="project-description">Small description of the project</p>
-            <ul class="project-list">
-              <li class="langbox">HTML/CSS</li>
-              <li class="langbox">JavaScript</li>
-              <li class="langbox">Ruby On Rails</li>
-            </ul>
-            <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
-          </section></div>
-
-          <div class="square-red-2"></div>
-
-      </div>
-      <div class="ds-grid-second-second-container">
-
-      <div class="hidden-3">
-        <section class="project-content content-small">
-          <h2 class="project-title title-small"> Project name goes here </h2>
-          <p class="project-description">Small description of the project</p>
-          <ul class="project-list">
-            <li class="langbox">HTML/CSS</li>
-            <li class="langbox">JavaScript</li>
-            <li class="langbox">Ruby On Rails</li>
-          </ul>
-          <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
-        </section></div>
-
-        <div class="hidden-5">
+          <div class="hidden-2">
           <section class="project-content content-small">
             <h2 class="project-title title-small"> Project name goes here </h2>
             <p class="project-description">Small description of the project</p>
@@ -122,92 +88,137 @@
             <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
           </section></div>
 
-          <div class="square-3"></div>
+          <div class="pois second-pois">
+          </div><div class="shape-2"></div>
+
+          <div class="hidden-4">
+            <section class="project-content">
+              <h2 class="project-title"> Project name goes here </h2>
+              <p class="project-description">Small description of the project</p>
+              <ul class="project-list">
+                <li class="langbox">HTML/CSS</li>
+                <li class="langbox">JavaScript</li>
+                <li class="langbox">Ruby On Rails</li>
+              </ul>
+              <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+            </section></div>
+
+            <div class="square-red-2"></div>
+
+        </div>
+        <div class="ds-grid-second-second-container">
+
+        <div class="hidden-3">
+          <section class="project-content content-small">
+            <h2 class="project-title title-small"> Project name goes here </h2>
+            <p class="project-description">Small description of the project</p>
+            <ul class="project-list">
+              <li class="langbox">HTML/CSS</li>
+              <li class="langbox">JavaScript</li>
+              <li class="langbox">Ruby On Rails</li>
+            </ul>
+            <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+          </section></div>
+
+          <div class="hidden-5">
+            <section class="project-content content-small">
+              <h2 class="project-title title-small"> Project name goes here </h2>
+              <p class="project-description">Small description of the project</p>
+              <ul class="project-list">
+                <li class="langbox">HTML/CSS</li>
+                <li class="langbox">JavaScript</li>
+                <li class="langbox">Ruby On Rails</li>
+              </ul>
+              <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+            </section></div>
+
+            <div class="square-3"></div>
 
 
-    </div></div></div>
+      </div></div></div>
 
 
-    <div class="grid-container proj-grid">
-    <div class="title-project">Projects</div>
-    <ul class="grid-projects grid-one">
+      <div class="grid-container proj-grid">
+      <div class="title-project">Projects</div>
+      <ul class="grid-projects grid-one">
 
 
-      <li class="project first-pr">
-        <img src="img/laptop.png" class="project-image" alt="Project picture">
-        <section class="project-content">
-          <h2 class="project-title"> Project name goes here </h2>
-          <p class="project-description">Small description of the project</p>
-          <ul class="project-list">
-            <li class="langbox">HTML/CSS</li>
-            <li class="langbox">JavaScript</li>
-            <li class="langbox">Ruby On Rails</li>
-          </ul>
-          <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
-        </section>
-      </li>
+        <li class="project first-pr">
+          <img src="img/laptop.png" class="project-image" alt="Project picture">
+          <section class="project-content">
+            <h2 class="project-title"> Project name goes here </h2>
+            <p class="project-description">Small description of the project</p>
+            <ul class="project-list">
+              <li class="langbox">HTML/CSS</li>
+              <li class="langbox">JavaScript</li>
+              <li class="langbox">Ruby On Rails</li>
+            </ul>
+            <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+          </section>
+        </li>
 
-      <li class="project second-pr">
-        <img src="img/laptop2.png" class="project-image" alt="Project picture">
-        <section class="project-content">
-          <h2 class="project-title"> Project name goes here </h2>
-          <p class="project-description">Small description of the project</p>
-          <ul class="project-list">
-            <li class="langbox">HTML/CSS</li>
-            <li class="langbox">JavaScript</li>
-            <li class="langbox">Ruby On Rails</li>
-          </ul>
-          <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
-        </section>
-      </li>
+        <li class="project second-pr">
+          <img src="img/laptop2.png" class="project-image" alt="Project picture">
+          <section class="project-content">
+            <h2 class="project-title"> Project name goes here </h2>
+            <p class="project-description">Small description of the project</p>
+            <ul class="project-list">
+              <li class="langbox">HTML/CSS</li>
+              <li class="langbox">JavaScript</li>
+              <li class="langbox">Ruby On Rails</li>
+            </ul>
+            <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+          </section>
+        </li>
 
-      <li class="project third-pr">
-        <img src="img/laptop3.png" class="project-image" alt="Project picture">
-        <section class="project-content">
-          <h2 class="project-title"> Project name goes here </h2>
-          <p class="project-description">Small description of the project</p>
-          <ul class="project-list">
-            <li class="langbox">HTML/CSS</li>
-            <li class="langbox">JavaScript</li>
-            <li class="langbox">Ruby On Rails</li>
-          </ul>
-          <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
-        </section>
-      </li>
+        <li class="project third-pr">
+          <img src="img/laptop3.png" class="project-image" alt="Project picture">
+          <section class="project-content">
+            <h2 class="project-title"> Project name goes here </h2>
+            <p class="project-description">Small description of the project</p>
+            <ul class="project-list">
+              <li class="langbox">HTML/CSS</li>
+              <li class="langbox">JavaScript</li>
+              <li class="langbox">Ruby On Rails</li>
+            </ul>
+            <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+          </section>
+        </li>
 
-      <li class="project fourth-pr">
-        <img src="img/laptop4.png" class="project-image" alt="Project picture">
-        <section class="project-content">
-          <h2 class="project-title"> Project name goes here </h2>
-          <p class="project-description">Small description of the project</p>
-          <ul class="project-list">
-            <li class="langbox">HTML/CSS</li>
-            <li class="langbox">JavaScript</li>
-            <li class="langbox">Ruby On Rails</li>
-          </ul>
-          <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
-        </section>
-      </li>
+        <li class="project fourth-pr">
+          <img src="img/laptop4.png" class="project-image" alt="Project picture">
+          <section class="project-content">
+            <h2 class="project-title"> Project name goes here </h2>
+            <p class="project-description">Small description of the project</p>
+            <ul class="project-list">
+              <li class="langbox">HTML/CSS</li>
+              <li class="langbox">JavaScript</li>
+              <li class="langbox">Ruby On Rails</li>
+            </ul>
+            <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+          </section>
+        </li>
 
-      <li class="project fifth-pr">
-        <img src="img/laptop5.png" class="project-image" alt="Project picture">
-        <section class="project-content">
-          <h2 class="project-title"> Project name goes here </h2>
-          <p class="project-description">Small description of the project</p>
+        <li class="project fifth-pr">
+          <img src="img/laptop5.png" class="project-image" alt="Project picture">
+          <section class="project-content">
+            <h2 class="project-title"> Project name goes here </h2>
+            <p class="project-description">Small description of the project</p>
 
-          <ul class="project-list">
-            <li class="langbox">HTML/CSS</li>
-            <li class="langbox">JavaScript</li>
-            <li class="langbox">Ruby On Rails</li>
-          </ul>
-          <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
-        </section>
-      </li>
+            <ul class="project-list">
+              <li class="langbox">HTML/CSS</li>
+              <li class="langbox">JavaScript</li>
+              <li class="langbox">Ruby On Rails</li>
+            </ul>
+            <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+          </section>
+        </li>
 
-    </ul>
+      </ul>
+      </div>
     </div>
 
-    <div class="container-about-section">
+    <div id="about-id" class="container-about-section">
     <div class="container container-middle">
       <section class="about-section">
         <h1 class="title">About</h1>
@@ -255,7 +266,7 @@
 
     <div class="shape-triangle"></div>
     <div class="shape-square"></div>
-    <section class="container container-bottom">
+    <section id="contact-id" class="container container-bottom">
       <h1 class="title footer-title">Get Started</h1>
       <p class="presentation footer-presentation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <form id="contact-form" action="https://formspree.io/f/xqkwdpqy" method="POST">
