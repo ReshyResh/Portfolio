@@ -15,5 +15,8 @@ function menuToggle() {
     shape1.classList.toggle('color1');
     shape2.classList.toggle('color2');
   }
+  else {
+	  menuToggle();
+  }
 }
-menuToggle();
+

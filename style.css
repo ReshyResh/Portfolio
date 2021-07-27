@@ -532,7 +532,7 @@ footer a {
 
   .main-menu li {
     color: #fff;
-    padding: 3em;
+    margin-right: 3em;
     font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -856,5 +856,25 @@ footer a {
   .main-menu li > a:visited {
     color: #fff;
     text-decoration: none;
+  }
+
+  .js-main-menu {
+      margin: auto;
+      display: flex;
+      flex-flow: row;
+  }
+
+  .js-main-menu>li {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 3em;
+    padding: 0;
+  }
+
+  .cross {
+    display: none !important;
   }
 }
