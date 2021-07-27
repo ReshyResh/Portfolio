@@ -84,7 +84,7 @@
               <li class="langbox">JavaScript</li>
               <li class="langbox">Ruby On Rails</li>
             </ul>
-            <button class="button-project" type="submit"><span class="button-text" onclick="modal(1)">See This Project<i class="fas fa-angle-right"></i></span></button>
+            <button onclick="modal(1)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
           </section></div>
 
           <div class="pois second-pois">
@@ -99,7 +99,7 @@
                 <li class="langbox">JavaScript</li>
                 <li class="langbox">Ruby On Rails</li>
               </ul>
-              <button class="button-project" type="submit"><span class="button-text" onclick="modal(2)">See This Project<i class="fas fa-angle-right"></i></span></button>
+              <button onclick="modal(2)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
             </section></div>
 
             <div class="square-red-2"></div>
@@ -116,7 +116,7 @@
               <li class="langbox">JavaScript</li>
               <li class="langbox">Ruby On Rails</li>
             </ul>
-            <button class="button-project" type="submit"><span class="button-text" onclick="modal(4)">See This Project<i class="fas fa-angle-right"></i></span></button>
+            <button onclick="modal(4)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
           </section></div>
 
           <div class="hidden-5">
@@ -128,7 +128,7 @@
                 <li class="langbox">JavaScript</li>
                 <li class="langbox">Ruby On Rails</li>
               </ul>
-              <button class="button-project" type="submit"><span class="button-text" onclick="modal(3)">See This Project<i class="fas fa-angle-right"></i></span></button>
+              <button onclick="modal(3)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
             </section></div>
 
             <div class="square-3"></div>
@@ -152,7 +152,7 @@
               <li class="langbox">JavaScript</li>
               <li class="langbox">Ruby On Rails</li>
             </ul>
-            <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+            <button onclick="modal(0)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
           </section>
         </li>
 
@@ -166,7 +166,7 @@
               <li class="langbox">JavaScript</li>
               <li class="langbox">Ruby On Rails</li>
             </ul>
-            <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+            <button onclick="modal(1)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
           </section>
         </li>
 
@@ -180,7 +180,7 @@
               <li class="langbox">JavaScript</li>
               <li class="langbox">Ruby On Rails</li>
             </ul>
-            <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+            <button onclick="modal(2)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
           </section>
         </li>
 
@@ -194,7 +194,7 @@
               <li class="langbox">JavaScript</li>
               <li class="langbox">Ruby On Rails</li>
             </ul>
-            <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+            <button onclick="modal(3)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
           </section>
         </li>
 
@@ -209,7 +209,7 @@
               <li class="langbox">JavaScript</li>
               <li class="langbox">Ruby On Rails</li>
             </ul>
-            <button class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
+            <button onclick="modal(4)" class="button-project" type="submit"><span class="button-text">See This Project<i class="fas fa-angle-right"></i></span></button>
           </section>
         </li>
 
@@ -222,7 +222,7 @@
       <section class="about-section">
         <h1 class="title">About</h1>
         <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
-        <button class="button-main" type="submit"><span class="button-text">Get my CV<i class="fas fa-download"></i></span></button>
+        <button onclick="modal(5)" class="button-main" type="submit"><span class="button-text">Get my CV<i class="fas fa-download"></i></span></button>
       </section>
     </div>
 
@@ -291,8 +291,10 @@
 <!----------------------------------------------------------------->
 
 <article id="card" class="card invisible">
-  <i id="card-cross" class="fas fa-times" onclick="toggle()"></i>
-  <h3 id="card-title">See Project header</h3>
+  <div class="card-top">
+    <h3 id="card-title">See Project header</h3>
+    <i id="card-cross" class="fas fa-times-circle" onclick="toggle()"></i>
+  </div>
   <ul id="card-list" class="card-list">
   </ul>
   <img src="./img/laptop1-big.png" class="card-image" alt="Someone's MacBook">

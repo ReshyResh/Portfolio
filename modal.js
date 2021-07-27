@@ -1,58 +1,58 @@
 const cardImages = './img/laptop'
 
 const card1 = {
-    title: '1 Project',
+    title: 'First Project Name',
     technologies: [
       'HTML/CSS',
       'Ruby on Rails',
       'JavaScript'
     ],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam modi architecto reprehenderit officiis consequatur id molestias sint, maxime cumque ad excepturi atque voluptatem nihil delectus placeat recusandae natus exercitationem!',
-    link: 'http://www.github.com'
+    link: 'https://linktofirstproject.com'
   };
 
   const card2 = {
-    title: '2 Project',
+    title: 'Second Project Name',
     technologies: [
       'HTML/CSS',
       'Ruby on Rails',
       'JavaScript'
     ],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam modi architecto reprehenderit officiis consequatur id molestias sint, maxime cumque ad excepturi atque voluptatem nihil delectus placeat recusandae natus exercitationem!',
-    link: 'http://www.google.com'
+    link: 'https://linktosecondproject.com'
   };
 
   const card3 = {
-    title: '3 Project',
+    title: 'Third Project Name',
     technologies: [
       'HTML/CSS',
       'Ruby on Rails',
       'JavaScript'
     ],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam modi architecto reprehenderit officiis consequatur id molestias sint, maxime cumque ad excepturi atque voluptatem nihil delectus placeat recusandae natus exercitationem!',
-    link: 'https://github.com/rpire/microverse-portfolio/tree/modal'
+    link: 'https://linktothirdproject.com'
   };
 
   const card4 = {
-    title: '4 Project',
+    title: 'Fifth Project Name',
     technologies: [
       'HTML/CSS',
       'Ruby on Rails',
       'JavaScript'
     ],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam modi architecto reprehenderit officiis consequatur id molestias sint, maxime cumque ad excepturi atque voluptatem nihil delectus placeat recusandae natus exercitationem!',
-    link: 'https://github.com/rpire/microverse-portfolio/tree/modal'
+    link: 'https://linktofifthproject.com'
   };
 
   const card5 = {
-    title: '5 Project',
+    title: 'Fourth Project Name',
     technologies: [
       'HTML/CSS',
       'Ruby on Rails',
       'JavaScript'
     ],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam modi architecto reprehenderit officiis consequatur id molestias sint, maxime cumque ad excepturi atque voluptatem nihil delectus placeat recusandae natus exercitationem!',
-    link: 'https://github.com/rpire/microverse-portfolio/tree/modal'
+    link: 'https://linktofourthproject.com'
   };
 
   const projects = [card1, card2, card3, card4, card5];

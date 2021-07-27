@@ -463,39 +463,59 @@ footer a {
 
 .card {
   position: fixed;
-  top: 0;
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  width: 80vw;
-  height: 80vh;
-  left: 10vw;
-  top: 10vh;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
   z-index: 99;
+  overflow-y: auto;
 }
 
 #card-title {
   color: #1a2236;
-  font-size: 3em;
+  margin: 2% 0 1% 20%;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+}
+
+.card-top {
+  display: flex;
+  font-size: 2em;
+  justify-content: space-between;
+}
+
+#card-cross {
+  margin: 2% 10% 0 0;
 }
 
 .card-list>li{
-  width: 20%;
-  height: 3em;
-  border: 2px solid black;
+  width: auto;
+  min-width: 20%;
+  height: 2em;
+  border: 1px solid #1A2236;
   font-size: 1em;
   font-weight: 300;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   text-align: center;
+  line-height: 2em;
 }
 
 #card-button-live, #card-button-source {
-  width: 20%;
+  width: 50%;
+  align-self: center;
 }
 
 #card-description {
-  width: 60%;
+  width: 45%;
   margin: auto;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1A2236;
 }
 
 .card-list {
@@ -503,30 +523,35 @@ footer a {
   flex-direction: row;
   justify-content: space-evenly;
   list-style-type: none;
-  width: 50%;
-  margin: 0;
+  width: 70%;
   padding-bottom: 10px;
+  margin-left: 15%;
 }
 
 .button-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   width: 100%;
+  margin-top: 2em;
+  margin-bottom: 4em;
 }
 
 .card-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
   background: #1a2236;
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  width: 50%;
+  height: 3em;
+}
+
+.card-image {
+  width: 60%;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 /* ------------------------------------------------- */
@@ -949,4 +974,24 @@ footer a {
   .cross {
     display: none !important;
   }
+
+  .card {
+    width: 75vw;
+    height: auto;
+    left: 15vw;
+    top: 5vh;
+  }
+
+  #card-button-live, #card-button-source {
+    width: 20%;
+  }
+
+  .card-list {
+    width: 50%;
+  }
+
+  .button-container {
+    flex-direction: row;
+  }
+
 }
