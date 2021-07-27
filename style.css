@@ -490,11 +490,11 @@ footer a {
   margin: 2% 10% 0 0;
 }
 
-.card-list>li{
+.card-list > li {
   width: auto;
   min-width: 20%;
   height: 2em;
-  border: 1px solid #1A2236;
+  border: 1px solid #1a2236;
   font-size: 1em;
   font-weight: 300;
   font-family: Poppins, sans-serif;
@@ -502,7 +502,8 @@ footer a {
   line-height: 2em;
 }
 
-#card-button-live, #card-button-source {
+#card-button-live,
+#card-button-source {
   width: 50%;
   align-self: center;
 }
@@ -510,12 +511,12 @@ footer a {
 #card-description {
   width: 45%;
   margin: auto;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
-  color: #1A2236;
+  color: #1a2236;
 }
 
 .card-list {
@@ -538,13 +539,20 @@ footer a {
 }
 
 .card-button {
-  background: #1a2236;
-  color: #fff;
+  background: #fff;
+  transition: 0.3s;
+  border: solid 1px #1a2236;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   height: 3em;
+  margin-right: 20px;
+}
+
+.card-button:hover {
+  background: #1a2236;
+  color: #fff;
 }
 
 .card-image {
@@ -635,10 +643,6 @@ footer a {
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
-  }
-
-  .main-menu li:hover {
-    border-bottom: 2px solid #fff;
   }
 
   .shapes {
@@ -956,12 +960,12 @@ footer a {
   }
 
   .js-main-menu {
-      margin: auto;
-      display: flex;
-      flex-flow: row;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
   }
 
-  .js-main-menu>li {
+  .js-main-menu > li {
     font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -969,6 +973,10 @@ footer a {
     line-height: 24px;
     margin-right: 3em;
     padding: 0;
+  }
+
+  .main-menu li:hover {
+    border-bottom: 2px solid #fff;
   }
 
   .cross {
@@ -982,7 +990,8 @@ footer a {
     top: 5vh;
   }
 
-  #card-button-live, #card-button-source {
+  #card-button-live,
+  #card-button-source {
     width: 20%;
   }
 
@@ -993,5 +1002,4 @@ footer a {
   .button-container {
     flex-direction: row;
   }
-
 }

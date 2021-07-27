@@ -14,9 +14,8 @@ function menuToggle() {
     cross.classList.toggle('invisible');
     shape1.classList.toggle('color1');
     shape2.classList.toggle('color2');
-  }
-  else {
-	  menuToggle();
+  } else {
+    menuToggle();
   }
 }
-
+menuToggle();
