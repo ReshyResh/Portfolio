@@ -55,36 +55,36 @@ const card5 = {
   link: 'https://linktofourthproject.com',
 };
 
-const projects = [card1, card2, card3, card4, card5];
+const projects = [card1, card2, card3, card4, card5]; // Array for cards contents
 
-function modal(number) {
+function modal(number) { // The argument is given by the button onclick
   const card = document.querySelector('#card');
   card.classList.toggle('invisible');
   card.classList.toggle('visible');
   const title = document.querySelector('#card-title');
   const list = document.querySelector('#card-list');
-  list.innerHTML = '';
+  list.innerHTML = ''; // Reset the list because otherwise it would be appending every time it is opened
   const img = document.querySelector('.card-image');
   const desc = document.querySelector('#card-description');
   const buttonsrc = document.querySelector('#card-button-source');
   const buttonlive = document.querySelector('#card-button-live');
 
-  title.innerHTML = projects[number].title;
+  title.innerHTML = projects[number].title; // Change title
 
-  for (let i = 0; i < projects[number].technologies.length; i += 1) {
-    const li = document.createElement('li');
-    li.textContent = projects[number].technologies[i];
-    list.appendChild(li);
+  for (let i = 0; i < projects[number].technologies.length; i += 1) { // For each item in technology
+    const li = document.createElement('li'); // Create a list item
+    li.textContent = projects[number].technologies[i]; // With the content of technology array
+    list.appendChild(li); // Append the list item
   }
 
-  img.setAttribute('src', `${cardImages + (number + 1)}-big.png`);
-  buttonsrc.setAttribute('onclick', `window.open('${projects[number].link}', '_blank');`);
+  img.setAttribute('src', `${cardImages + (number + 1)}-big.png`); // Set image src dynamically
+  buttonsrc.setAttribute('onclick', `window.open('${projects[number].link}', '_blank');`); // Set links dynamically
   buttonlive.setAttribute('onclick', `window.open('${projects[number].link}', '_blank');`);
-  desc.innerHTML = projects[number].description;
+  desc.innerHTML = projects[number].description; // Set description
 }
 function toggle() {
-  const card = document.querySelector('#card');
-  card.classList.replace('visible','invisible');
+  const card = document.querySelector('#card'); // Toggle function just for the cross item
+  card.classList.replace('visible', 'invisible');
 }
 
 toggle();

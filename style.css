@@ -467,7 +467,7 @@ footer a {
   padding-bottom: 20px;
 }
 
-.error-popup {
+#error-popup {
   align-self: center;
   height: 50px;
   width: 320px;
@@ -477,7 +477,6 @@ footer a {
   bottom: 270px;
   transition: all 3s ease-in;
   visibility: visible;
-  color: white;
   border-radius: 3%;
   font-family: Poppins, sans-serif;
   font-style: normal;
@@ -490,8 +489,8 @@ footer a {
 }
 
 .fade {
-  visibility: hidden;
-  opacity: 0;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 /* --------------------  Cards  ---------------- */
