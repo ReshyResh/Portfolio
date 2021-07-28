@@ -60,6 +60,7 @@ const projects = [card1, card2, card3, card4, card5];
 function modal(number) {
   const card = document.querySelector('#card');
   card.classList.toggle('invisible');
+  card.classList.toggle('visible');
   const title = document.querySelector('#card-title');
   const list = document.querySelector('#card-list');
   list.innerHTML = '';
@@ -83,7 +84,7 @@ function modal(number) {
 }
 function toggle() {
   const card = document.querySelector('#card');
-  card.classList.toggle('invisible');
+  card.classList.replace('visible','invisible');
 }
 
 toggle();

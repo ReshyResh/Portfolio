@@ -19,7 +19,15 @@ ul {
 }
 
 .invisible {
-  display: none !important;
+  visibility: hidden !important;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .js-toggle {
@@ -459,6 +467,8 @@ footer a {
   padding-bottom: 20px;
 }
 
+
+
 /* --------------------  Cards  ---------------- */
 
 .card {
@@ -471,6 +481,7 @@ footer a {
   top: 0;
   z-index: 99;
   overflow-y: auto;
+  transition: all 0.5s;
 }
 
 #card-title {
