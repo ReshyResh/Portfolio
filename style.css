@@ -467,7 +467,32 @@ footer a {
   padding-bottom: 20px;
 }
 
+.error-popup {
+  align-self: center;
+  height: 50px;
+  width: 320px;
+  background-color: red;
+  position: absolute;
+  opacity: 1;
+  bottom: 270px;
+  transition: all 3s ease-in;
+  visibility: visible;
+  color: white;
+  border-radius: 3%;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8em;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+}
 
+.fade {
+  visibility: hidden;
+  opacity: 0;
+}
 
 /* --------------------  Cards  ---------------- */
 

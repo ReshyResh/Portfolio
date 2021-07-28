@@ -23,5 +23,16 @@ function checkemail() {
   if (lower == email) {
     form.submit();
   }
-
+  else {
+    form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const error = document.createElement('aside');
+    error.textContent = "Please make sure the email is all lower case";
+    error.classList.add('error-popup');
+    setTimeout(function(){
+      error.classList.toggle('fade');
+      }, 500);
+    form.appendChild(error);
+    });
+  }
 }
