@@ -84,30 +84,24 @@ function modal(number) { // The argument is given by the button onclick
   desc.innerHTML = projects[number].description; // Set description
 }
 
-
-
 function toggle() {
   const card = document.querySelector('#card'); // Toggle function just for the cross item
   card.classList.replace('visible', 'invisible');
 }
 
-document.addEventListener('click', function(e){ // Close modal menu with click outside modal
-  if (!(document.getElementById('card').classList.contains('invisible'))){
-    if (!(document.getElementById('card').contains(e.target))){
+document.addEventListener('click', (e) => { // Close modal menu with click outside modal
+  if (!(document.getElementById('card').classList.contains('invisible'))) {
+    if (!(document.getElementById('card').contains(e.target))) {
       toggle();
-      }
     }
+  }
 });
-
-
-
-document.addEventListener('keydown', keyPress); // Close modal menu with escape key
-function keyPress (e) {
-    if(e.key === "Escape") {
-        toggle();
-    }
+function keyPress(e) {
+  if (e.key === 'Escape') {
+    toggle();
+  }
 }
-
+document.addEventListener('keydown', keyPress); // Close modal menu with escape key
 
 toggle();
 modal();
