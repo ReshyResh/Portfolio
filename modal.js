@@ -59,8 +59,9 @@ const projects = [card1, card2, card3, card4, card5]; // Array for cards content
 
 function modal(number) { // The argument is given by the button onclick
   const card = document.querySelector('#card');
-  card.classList.toggle('invisible');
-  card.classList.toggle('visible');
+  setTimeout(() => { // Delay to avoid toggle to be triggered, which means it will not appear at all
+    card.classList.replace('invisible', 'visible');
+  }, 1);
   const title = document.querySelector('#card-title');
   const list = document.querySelector('#card-list');
   list.innerHTML = ''; // Reset the list because otherwise it would be appending every time it is opened
@@ -82,10 +83,31 @@ function modal(number) { // The argument is given by the button onclick
   buttonlive.setAttribute('onclick', `window.open('${projects[number].link}', '_blank');`);
   desc.innerHTML = projects[number].description; // Set description
 }
+
+
+
 function toggle() {
   const card = document.querySelector('#card'); // Toggle function just for the cross item
   card.classList.replace('visible', 'invisible');
 }
+
+document.addEventListener('click', function(e){ // Close modal menu with click outside modal
+  if (!(document.getElementById('card').classList.contains('invisible'))){
+    if (!(document.getElementById('card').contains(e.target))){
+      toggle();
+      }
+    }
+});
+
+
+
+document.addEventListener('keydown', keyPress); // Close modal menu with escape key
+function keyPress (e) {
+    if(e.key === "Escape") {
+        toggle();
+    }
+}
+
 
 toggle();
 modal();
