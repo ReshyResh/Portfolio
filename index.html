@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="modal.js"></script>
+    <script src="local-storage.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
@@ -269,9 +270,9 @@
       <h1 class="title footer-title">Get Started</h1>
       <p class="presentation footer-presentation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <form action="https://formspree.io/f/xqkwdpqy" id="contact-form" method="POST">
-        <input name="name" maxlength="30" type="text" class="input-form name-form" required placeholder="Your name">
-        <input name="email" type="email" class="input-form email-form" required placeholder="Your email">
-        <textarea name="message" maxlength="500" class="text-form text-form2" required placeholder="Enter your message here.."></textarea>
+        <input onchange="keypress()" name="name" maxlength="30" type="text" class="input-form name-form" required placeholder="Your name">
+        <input onchange="keypress()" name="email" type="email" class="input-form email-form" required placeholder="Your email">
+        <textarea onchange="keypress()" name="message" maxlength="500" class="text-form text-form2" required placeholder="Enter your message here.."></textarea>
         <button onclick="checkemail()" id="contact-submit-button" class="button-main" type="submit"><span class="button-text">Start Collaboration</span></button>
       </form>
     </section>
