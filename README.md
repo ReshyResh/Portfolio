@@ -7,7 +7,7 @@ Beginning of the personal portfolio, starting with the mobile version.
 - ATOM text editor
 
 # Live demo
-See the website in action [here](https://reshyresh.github.io/Portfolio/)
+See the website in action [here](https://reshyresh.github.io/Portfolio/index.html)
 
 
 # Template Used 
